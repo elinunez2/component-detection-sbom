@@ -32,10 +32,7 @@ jobs:
       - name: Build
         run: |
           dotnet build --no-restore --configuration Debug
-          ls
-          ls ./docs
-          ls ./src
-          ls ./test
+          find . -type f -name "*.exe"
       
       - name: Generate SBOM
         run: |
