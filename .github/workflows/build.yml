@@ -33,6 +33,9 @@ jobs:
         run: |
           dotnet build --no-restore --configuration Debug
           ls
+          ls ./docs
+          ls ./src
+          ls ./test
       
       - name: Generate SBOM
         run: |
