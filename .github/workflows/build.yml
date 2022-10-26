@@ -27,7 +27,10 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Restore packages
-        run: dotnet restore
+        run: |
+          dotnet restore
+          ls ./src/Microsoft.ComponentDetection/bin/Debug
+        
 
       - name: Build
         run: |
