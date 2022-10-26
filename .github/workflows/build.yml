@@ -45,9 +45,9 @@ jobs:
           path: ./_manifest
         
       - name: Upload a Build Artifact (DLL)
-      uses: actions/upload-artifact@v3.1.0
-      with:
-        path: ./*.dll
+        uses: actions/upload-artifact@v3.1.0
+        with:
+          path: ./*.dll
 
       - name: Run tests
         run: dotnet test --no-build --configuration Debug
