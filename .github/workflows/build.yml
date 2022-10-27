@@ -29,7 +29,6 @@ jobs:
       - name: Restore packages
         run: |
           dotnet restore
-          ls ./src/Microsoft.ComponentDetection/bin/Debug
         
 
       - name: Build
